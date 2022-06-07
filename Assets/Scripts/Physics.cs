@@ -2,8 +2,14 @@
 
 public class Physics : MonoBehaviour
 {
+    #region Fields
+    
     private CelestialBody[] _bodies;
     private static Physics _instance;
+    
+    #endregion
+
+    #region Events
 
     void Start()
     {
@@ -18,7 +24,11 @@ public class Physics : MonoBehaviour
             _bodies[i].UpdateVelocity(acceleration);
         }
     }
+    
+    #endregion
 
+    #region Private Methods
+    
     private Vector3 CalculateAcceleration(Vector3 point, CelestialBody ignoreBody = null)
     {
         Vector3 acceleration = Vector3.zero;
@@ -35,4 +45,6 @@ public class Physics : MonoBehaviour
 
         return acceleration;
     }
+    
+    #endregion
 }
