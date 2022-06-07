@@ -44,7 +44,6 @@
      <Compile Include="Assets\Scripts\Physics.cs" />
      <Compile Include="Assets\Scripts\Universe.cs" />
      <Compile Include="Assets\Scripts\CelestialBody.cs" />
-     <Compile Include="Assets\Scripts\TestInstaller.cs" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.1.3f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
@@ -290,9 +289,6 @@
      </Reference>
      <Reference Include="UnityEditor.UnityConnectModule">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.1.3f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
-     </Reference>
-     <Reference Include="Zenject-usage">
-     <HintPath>C:\Projects\Estanta\Assets\Plugins\Zenject\Source\Usage\Zenject-usage.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
      <HintPath>C:\Projects\Estanta\Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
@@ -723,11 +719,11 @@
      <Reference Include="Unity.Services.Core">
      <HintPath>C:\Projects\Estanta\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.VisualScripting.Core">
-     <HintPath>C:\Projects\Estanta\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.EditorCoroutines.Editor">
      <HintPath>C:\Projects\Estanta\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Core">
+     <HintPath>C:\Projects\Estanta\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Services.Core.Analytics">
      <HintPath>C:\Projects\Estanta\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
@@ -749,14 +745,6 @@
      </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Zenject-Editor.csproj">
-      <Project>{039d0636-ac48-6581-9543-2cf647151817}</Project>
-      <Name>Zenject-Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Zenject.csproj">
-      <Project>{a7c97416-f0ee-fe59-0786-170299182570}</Project>
-      <Name>Zenject</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
