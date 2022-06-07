@@ -18,10 +18,10 @@ public class Physics : MonoBehaviour
 
     void FixedUpdate()
     {
-        for (int i = 0; i < _bodies.Length; i++)
+        foreach (var body in _bodies)
         {
-            Vector3 acceleration = CalculateAcceleration(_bodies[i].transform.position, _bodies[i]);
-            _bodies[i].UpdateVelocity(acceleration);
+            Vector3 acceleration = CalculateAcceleration(body.transform.position, body);
+            body.UpdateVelocity(acceleration);
         }
     }
     
