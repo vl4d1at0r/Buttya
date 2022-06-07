@@ -39,7 +39,7 @@ public class Physics : MonoBehaviour
                 var position = body.transform.position;
                 float sqrDst = (position - point).sqrMagnitude;
                 Vector3 forceDir = (position - point).normalized;
-                acceleration += forceDir * (Universe.GravitationalConstant * body.mass) / sqrDst;
+                acceleration += forceDir * (Constants.GravitationalConstant * body.mass) / sqrDst;
             }
         }
 

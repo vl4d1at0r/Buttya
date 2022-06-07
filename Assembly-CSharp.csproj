@@ -42,7 +42,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CelestialBody.cs" />
-     <Compile Include="Assets\Scripts\Universe.cs" />
+     <Compile Include="Assets\Scripts\Constants.cs" />
      <Compile Include="Assets\Scripts\Physics.cs" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.1.3f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>

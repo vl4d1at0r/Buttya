@@ -18,7 +18,7 @@ public class CelestialBody : MonoBehaviour
 
     private void Start() 
     {
-        mass = surfaceGravity * radius * radius / Universe.GravitationalConstant;
+        mass = surfaceGravity * radius * radius / Constants.GravitationalConstant;
         transform.localScale = Vector3.one * radius;
         
         _rigidbody = GetComponent<Rigidbody>();
