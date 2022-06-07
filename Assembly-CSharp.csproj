@@ -41,9 +41,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Physics.cs" />
-     <Compile Include="Assets\Scripts\Universe.cs" />
      <Compile Include="Assets\Scripts\CelestialBody.cs" />
+     <Compile Include="Assets\Scripts\Universe.cs" />
+     <Compile Include="Assets\Scripts\Physics.cs" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.1.3f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
@@ -701,6 +701,9 @@
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
      <HintPath>C:\Projects\Estanta\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.VisualScripting.Flow">
+     <HintPath>C:\Projects\Estanta\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+     </Reference>
      <Reference Include="UnityEditor.UI">
      <HintPath>C:\Projects\Estanta\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
      </Reference>
@@ -710,20 +713,17 @@
      <Reference Include="Unity.Rider.Editor">
      <HintPath>C:\Projects\Estanta\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.VisualScripting.Flow">
-     <HintPath>C:\Projects\Estanta\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
-     </Reference>
      <Reference Include="UnityEngine.UI">
      <HintPath>C:\Projects\Estanta\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Services.Core">
      <HintPath>C:\Projects\Estanta\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.EditorCoroutines.Editor">
-     <HintPath>C:\Projects\Estanta\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.VisualScripting.Core">
      <HintPath>C:\Projects\Estanta\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.EditorCoroutines.Editor">
+     <HintPath>C:\Projects\Estanta\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Services.Core.Analytics">
      <HintPath>C:\Projects\Estanta\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
