@@ -1,20 +1,26 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
+using Zenject;
 
 public class Physics : MonoBehaviour
 {
     #region Fields
     
-    private CelestialBody[] _bodies;
-    private static Physics _instance;
-    
+    private List<CelestialBody> _bodies;
+
+    #endregion
+
+    #region Constructors
+
+    [Inject]
+    public void Construct(List<CelestialBody> bodies)
+    {
+        _bodies = bodies;
+    }
+
     #endregion
 
     #region Events
-
-    void Start()
-    {
-        _bodies = FindObjectsOfType<CelestialBody>();
-    }
 
     void FixedUpdate()
     {

@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using UnityEngine;
+using Zenject;
 
 public class CelestialBody : MonoBehaviour 
 {
@@ -12,6 +14,16 @@ public class CelestialBody : MonoBehaviour
 
     public float mass { get; private set; }
     
+    #endregion
+
+    #region Constructors
+    
+    [Inject]
+    public void Construct(List<CelestialBody> bodies)
+    {
+        bodies.Add(this);
+    }
+
     #endregion
 
     #region Events
